@@ -1,0 +1,65 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #3a4e55;
+  /* background-image: linear-gradient(135deg,);
+  animation: anima 3s linear infinite; */
+}
+.moon{
+  position: absolute;
+  min-height:100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none */
+}
+.blueMoon{
+  background-color: #6b93b6;
+  /* clip-path: polygon(15% 0, 100% 0, 100% 100%, 5% 100%); */
+  /* clip-path: polygon(15% 0, 95% 0, 85% 100%, 5% 100%); */
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+.moon::after{
+  content: "";
+  display: block;
+  /* 换做百分比适应页面缩放 */
+  /* width: 600px;
+  height: 600px; */
+  width: 39.06vw;
+  height: 39.06vw;
+  border-radius: 50%;
+  box-shadow: 180px 160px 0 cyan;
+  transform: translate(-180px ,-160px);
+
+}
+.redMoon{
+  background-color: #3a4e55; 
+  z-index: 990;
+  /* inset 简单裁剪 top r b l */
+  /* clip-path: inset(0 100% 0 0);  */
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+
+  /* 加上动画 */
+  background-image: linear-gradient(135deg, #383838,#3a4e55,#8c95aa);
+  /* animation: anima 5s linear infinite; */
+}
+.redMoon::after{
+  box-shadow: 180px 160px 0 #f75757;
+  /* animation: none; */
+}
+.sea{
+  position: absolute;
+  bottom: 0;
+  height: 180px;
+  width: 100%;
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  z-index: 999;
+}
+
+@keyframes anima{
+  100%{
+    filter:hue-rotate(1turn);
+  }
+}
