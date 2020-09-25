@@ -5,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time waits for no one (ﾟДﾟ)ﾊｧ?</title>
     <style>
-        html,body{
+        body{
             padding: 0;
             margin: 0;
         }
+        
         .moon{
             position: absolute;
-            min-height: 100vh;
-            width: 100vw;
+            min-height:100vh;
+            min-width: 100vw;
+            background-color: #6b93b6;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #333;
         }
-        .moon:after{
-            content:"";
+        .moon::after{
+            content: "";
             display: block;
-            width: 200px;
-            height: 200px;
-            background-color: #bfa;
+
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
             box-shadow: 180px 160px 0 cyan;
-            
+            transform: translate(-180px ,-160px);
+        }
+        .sea{
+            position: absolute;
+            bottom: 0;
+            height: 350px;
+            width: 100%;
+            backdrop-filter: blur(100px);
+            -webkit-backdrop-filter: blur(100px);
+            z-index: 999;
         }
     </style>
 </head>
