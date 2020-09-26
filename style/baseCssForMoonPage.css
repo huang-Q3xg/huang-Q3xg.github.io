@@ -1,7 +1,7 @@
 body{
   padding: 0;
   margin: 0;
-  background-color: #3a4e55;
+  background-color: #394042;
   /* background-image: linear-gradient(135deg,);
   animation: anima 3s linear infinite; */
 }
@@ -31,14 +31,14 @@ body{
   border-radius: 50%;
   box-shadow: 180px 160px 0 cyan;
   transform: translate(-180px ,-160px);
-
+  /* z-index: 1001; */
 }
 .redMoon{
   background-color: #3a4e55; 
   z-index: 990;
   /* inset 简单裁剪 top r b l */
   /* clip-path: inset(0 100% 0 0);  */
-  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 90% 100%);
 
   /* 加上动画 */
   background-image: linear-gradient(135deg, #383838,#3a4e55,#8c95aa);
@@ -51,11 +51,14 @@ body{
 .sea{
   position: absolute;
   bottom: 0;
-  height: 180px;
+  /* height: 180px; */
+  height: 23.5vh;
   width: 100%;
   backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
   z-index: 999;
+  /* 贴合斜的边，仅美化 (去掉效果也可)*/
+  clip-path: polygon(2.35% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 @keyframes anima{
