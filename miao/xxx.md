@@ -1,3 +1,0 @@
-#XXX
-lorem 
-iiii+++++++i
