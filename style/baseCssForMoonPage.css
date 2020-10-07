@@ -15,6 +15,7 @@ body{
   /* display: none */
 }
 .blueMoon{
+  z-index: 10;
   background-color: #6b93b6;
   /* clip-path: polygon(15% 0, 100% 0, 100% 100%, 5% 100%); */
   /* clip-path: polygon(15% 0, 95% 0, 85% 100%, 5% 100%); */
