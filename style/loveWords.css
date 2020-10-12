@@ -8,7 +8,7 @@
   white-space: pre-line;
   left: 20%;
   top: 0;
-  opacity: .5;
+  opacity: .2;
   margin: 0;
   padding: 0;
 }
@@ -320,4 +320,17 @@
 }
 .love p::first-letter {
   color: #cdd8de;
+}
+
+.wordsCol {
+  text-shadow: none;
+  z-index: 999;
+  opacity: 1;
+}
+.wordsCol span {
+  background-image: linear-gradient(90deg ,#4faff9,#62f6ff,#3869f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  color: transparent;
 }
